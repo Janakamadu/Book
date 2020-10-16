@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA_Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="jana_css/jana_style.css">
+    <link rel="stylesheet" type="text/css" href="jana_css/jana_lightslider.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>HCI project</title>
-    <script type="text/javascript" src="js/Jquery.js"></script>
-    <script type="text/javascript" src="js/lightslider.js"></script>
+    <title>Book Offer</title>
+    <script type="text/javascript" src="jana_js/jana_Jquery.js"></script>
+    <script type="text/javascript" src="jana_js/jana_lightslider.js"></script>
 
     <style> 
       
@@ -144,24 +145,31 @@
         .Offer_msg{
             background-color: #e6cf09d8;
         }
-        .box{height 100px;
-            width: 400px;}
+        #new{
+            color: #000000;
+        }
+
+        .icons{
+            margin-right: 1300px;
+        }
+    
     </style> 
+
 </head>
 
 <body>
 
-     
-    <body background="C:\Users\Janaka\Desktop\HCI Project\book-1\image\cover.jpg" height= "100%"; width= "100%;">  	
-    </div> 
+    <div>
+        <body background="image\cover.jpg" height= "100%"; width= "100%;">  	
+        </div>
     <header> 
         <div class="logo">
-            <img src="C:\Users\Janaka\Desktop\HCI Project\book-1\image\jana.png" alt="janaka" height= "200px"; width= "300px;">  	
+            <img src="image\jana.png" alt="janaka" height= "200px"; width= "300px;">  	
         </div>
 
         <div id="but">
-            <button type="button" class="btn-link">How It is work</button>
-            <button type="button" class="btn-link">About US</button>
+            <button type="button" id="new" class="btn-link">How It is work</button>
+            <button type="button" id="new" class="btn-link">About US</button>
             <button type="button" class="btn btn-primary">Login</button>
             <button type="button" class="btn btn-success">Sign-up</button>
         </div>
@@ -177,7 +185,7 @@
             <a href="#members">Members</a>
             <a href="#goups">Groups</a>
           </div>
-    </div> 
+        </div>
     
     <div class="searchbar">
          <input class="search_input" type="text" name="" placeholder="Search Book...">
@@ -192,10 +200,10 @@
       <li class="item-a">
         <div class="box">
         <div class="slide-img">
-        <img alt="1" src="C:\Users\Janaka\Desktop\HCI Project\Book-1\image\1.jpg">
+        <img alt="1" src="image\1.jpg">
         <div class="overlay">
        	
-        <a href="#" class="buy-btn">Buy Now</a>	
+        <a href="book_offer.html" class="buy-btn">Buy Now</a>	
         </div>
         </div>
        
@@ -217,14 +225,14 @@
   
         <div class="box">
         <div class="slide-img">
-        <img alt="2" src="C:\Users\Janaka\Desktop\HCI Project\Book-1\image\2.jpg">
+        <img alt="2" src="image\2.jpg">
         <div class="overlay">
-        <a href="#" class="buy-btn">Buy Now</a>	
+        <a href="book_offer.html" class="buy-btn">Buy Now</a>	
         </div>
         </div>
         <div class="detail-box">
         <div class="type">
-        <a href="#">English Grammer in Use/a>
+        <a href="#">English Grammer in Use</a>
         <span>New Arrival</span>
         </div>
         <a href="#" class="price">$20</a>
@@ -236,9 +244,9 @@
       <li class="item-c">
         <div class="box">
         <div class="slide-img">
-        <img alt="3" src="C:\Users\Janaka\Desktop\HCI Project\Book-1\image\3.jpg">
+        <img alt="3" src="image\3.jpg">
         <div class="overlay">
-        <a href="#" class="buy-btn">Buy Now</a>	
+        <a href="book_offer.html" class="buy-btn">Buy Now</a>	
         </div>
         </div>
         <div class="detail-box">
@@ -255,9 +263,9 @@
       <li class="item-d">
         <div class="box">
         <div class="slide-img">
-        <img alt="4" src="C:\Users\Janaka\Desktop\HCI Project\Book-1\image\4.jpg">
+        <img alt="4" src="image\4.jpg">
         <div class="overlay">
-        <a href="#" class="buy-btn">Buy Now</a>	
+        <a href="book_offer.html" class="buy-btn">Buy Now</a>	
         </div>
         </div>
         <div class="detail-box">
@@ -274,9 +282,9 @@
       <li class="item-e">
         <div class="box">
         <div class="slide-img">
-        <img alt="5" src="C:\Users\Janaka\Desktop\HCI Project\Book-1\image\5.jpg">
+        <img alt="5" src="image\5.jpg">
         <div class="overlay">
-        <a href="#" class="buy-btn">Buy Now</a>	
+        <a href="book_offer.html" class="buy-btn">Buy Now</a>	
         </div>
         </div>
         <div class="detail-box">
@@ -293,9 +301,9 @@
       <li class="item-f">
         <div class="box">
         <div class="slide-img">
-        <img alt="6" src="C:\Users\Janaka\Desktop\HCI Project\Book-1\image\6.jpg">
+        <img alt="6" src="image\6.jpg">
         <div class="overlay">
-        <a href="#" class="buy-btn">Buy Now</a>	
+        <a href="book_offer.html" class="buy-btn">Buy Now</a>	
         </div>
         </div>
         <div class="detail-box">
@@ -312,9 +320,9 @@
       <li class="item-g">
         <div class="box">
         <div class="slide-img">
-        <img alt="7" src="C:\Users\Janaka\Desktop\HCI Project\Book-1\image\7.jpg">
+        <img alt="7" src="image\7.jpg">
         <div class="overlay">
-        <a href="#" class="buy-btn">Buy Now</a>	
+        <a href="book_offer.html" class="buy-btn">Buy Now</a>	
         </div>
         </div>
         <div class="detail-box">
@@ -331,9 +339,9 @@
       <li class="item-h">
         <div class="box">
         <div class="slide-img">
-        <img alt="8" src="C:\Users\Janaka\Desktop\HCI Project\Book-1\image\8.jpg">
+        <img alt="8" src="image\8.jpg">
         <div class="overlay">
-        <a href="#" class="buy-btn">Buy Now</a>	
+        <a href="book_offer.html" class="buy-btn">Buy Now</a>	
         </div>
         </div>
         <div class="detail-box">
@@ -344,18 +352,22 @@
         <a href="#" class="price">$43</a>
             
         </div>
-        
         </div>		
     </li>
       
     </ul>
         </section>
         
-    <script type="text/javascript" src="js/script.js"></script>
-
+    <script type="text/javascript" src="jana_js/jana_script.js"></script>
+    </div>
     <footer>
         <br>
-      
+        <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
         <a href class="btn btn-warning">Top</a>
     </footer> 
 </body>

@@ -7,7 +7,8 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-            <title>HCI project</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+            <title>How It is work</title>
             <style> 
           
             .logo {
@@ -150,6 +151,18 @@
             }
             #ok{
                 margin-left: 1130px;
+                background-color: darkblue;
+                color: darkgray;
+            }
+            #new{
+            color: #000000;
+            }
+            #neww{
+                color: #000000;
+                background-color: aqua;
+            }
+            .icons{
+                margin-right: 1300px;
             }
         </style> 
         </head>
@@ -157,16 +170,16 @@
         <body>
              <!-- Header Section -->
              
-             <body background="C:\Users\Janaka\Desktop\HCI Project\book-1\image\cover.jpg" height= "100%"; width= "100%;">  	
+             <body background="image\cover.jpg" height= "100%"; width= "100%;">  	
             </div> 
             <header> 
                 <div class="logo">
-                    <img src="C:\Users\Janaka\Desktop\HCI Project\book-1\image\jana.png" alt="janaka" height= "200px"; width= "300px;">  	
+                    <img src="image\jana.png" alt="janaka" height= "200px"; width= "300px;">  	
                 </div>
     
                 <div id="but">
-                    <button type="button" id="how" class="btn-link">How It is work</button>
-                    <button type="button" class="btn-link">About US</button>
+                    <button type="button" id="neww" class="btn-link">How It is work</button>
+                    <button type="button" id="new" class="btn-link">About US</button>
                     <button type="button" class="btn btn-primary">Login</button>
                     <button type="button" class="btn btn-success">Sign-up</button>
                 </div>
@@ -192,7 +205,7 @@
             <div class = "body_sec"> 
                 <section id="Content"> 
                     <video width="800" controls class="video">
-                        <source src="C:\Users\Janaka\Desktop\HCI Project\Book-1\image\nruthya.mp4" type="video/mp4">
+                        <source src="image\nruthya.mp4" type="video/mp4">
                         Your browser does not support HTML video.
                       </video>
                       
@@ -200,18 +213,28 @@
 
                       <div class="form-group">
                         <label for="Description">what are the fault about the video description, give us any feedback:</label>
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Description"></textarea>
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Description" required></textarea>
                       </div>
                       <br>
-                    <button type="submit" id="ok" class="btn btn-success">Submit</button>
+                      <button id="ok" onclick="myFunction()">Submit</button>
+                      <script>
+                          function myFunction() {
+                            alert("Save successfully!");
+                          }
+                          </script>
                 </section> 
             </div> 
             <br><br>
     
             <footer>
                 <br>
-              
-                <a href class="btn btn-warning">Top</a>
+                <div class="icons">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+              <a href class="btn btn-warning">Top</a>
             </footer> 
     
         </body>

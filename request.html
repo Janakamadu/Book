@@ -1,13 +1,15 @@
-<Doctype html>
+<!Doctype html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">   
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <title>HCI project</title>
+        <title>Book Request</title>
         <style> 
       
         .logo {
@@ -21,6 +23,8 @@
             margin: 0 auto; 
             background-position:center; 
             background-size: contain; 
+            background-image: image('image\cover.jpg');
+            
         
         } 
       
@@ -179,24 +183,37 @@
             margin-top: 0px;
             margin-bottom: 2px;
         }
+        .popup{
+            background-color: blue;
+            margin-left: 1250px;
+            color: cornsilk;
+
+        }
+
+        #new{
+            color: #000000;
+        }
     
+        .icons{
+            margin-right: 1300px;
+        }
      
     </style> 
     </head>
     
     <body>
          <!-- Header Section -->
-         
-         <body background="C:\Users\Janaka\Desktop\HCI Project\book-1\image\cover.jpg" height= "100%"; width= "100%;">  	
-        </div> 
+         <div>
+            <body background="image\cover.jpg" height= "100%"; width= "100%;">  	
+            </div> 
         <header> 
             <div class="logo">
-                <img src="C:\Users\Janaka\Desktop\HCI Project\book-1\image\jana.png" alt="janaka" height= "200px"; width= "300px;">  	
+                <img src="image\jana.png" alt="janaka" height= "200px"; width= "300px;">  	
             </div>
 
             <div id="but">
-                <button type="button" class="btn-link">How It is work</button>
-                <button type="button" class="btn-link">About US</button>
+                <button type="button" id="new" class="btn-link">How It is work</button>
+                <button type="button" id="new" class="btn-link">About US</button>
                 <button type="button" class="btn btn-primary">Login</button>
                 <button type="button" class="btn btn-success">Sign-up</button>
             </div>
@@ -213,7 +230,8 @@
                 <a href="#goups">Groups</a>
               </div>
         </div> 
-        
+
+
         <div class="searchbar">
              <input class="search_input" type="text" name="" placeholder="Search Book...">
                 <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
@@ -223,16 +241,16 @@
             <section id="Content"> 
                 <form action="/action_page.php">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="Student_Name" placeholder="Student Name">
+                      <input type="text" class="form-control" id="Student_Name" placeholder="Student Name" required>
                     </div>
                     <div class="form-group">
-                      <input type="Text" class="form-control" id="Member_ID" placeholder="Member ID">
+                      <input type="Text" class="form-control" id="Member_ID" placeholder="Member ID (20200012)"pattern="[0-9]{7}" required>
                     </div>
                     <div class="form-group">
-                        <input type="Text" class="form-control" id="Book Title" placeholder="Book Title">
+                        <input type="Text" class="form-control" id="Book Title" placeholder="Book Title"required>
                     </div>
                     <div class="form-group">
-                        <input type="Text" class="form-control" id="ISBN NO" placeholder="ISBN NO">
+                        <input type="Text" class="form-control" id="ISBN NO" placeholder="ISBN NO" min="1" max="3000" required>
                     </div>
                     
                     <label for="cars">Choose a Author:</label>
@@ -251,7 +269,7 @@
                     <button type="submit" class="btn btn-success">Submit</button>
                   </form>
 
-                  <img src="C:\Users\Janaka\Desktop\HCI Project\book-1\image\arrow.png" class="arrow" alt="janaka" height= "80px"; width= "70px;">
+                  <img src="image\arrow.png" class="arrow" alt="janaka" height= "80px"; width= "70px;">
             </section> 
         </div> 
         <br><br>
@@ -264,17 +282,49 @@
             <th>Button</th>
             </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>2032</td>
+                        <td>Harry Potter</td>
+                        <td>2020 5625</td>
+                        <td>
+                            <a href class="btn btn-success">EDIT</a>
+                            <a href class="btn btn-danger">DELETE</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1032</td>
+                        <td>Safe Haven</td>
+                        <td>20205005</td>
+                        <td>
+                            <a href class="btn btn-success">EDIT</a>
+                            <a href class="btn btn-danger">DELETE</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1232</td>
+                        <td>The Other Lands</td>
+                        <td>20201255</td>
                         <td>
                             <a href class="btn btn-success">EDIT</a>
                             <a href class="btn btn-danger">DELETE</a>
                         </td>
                     </tr>
         </table>
+        <button class="popup" onclick="myFunction()">Save</button>
+        <script>
+            function myFunction() {
+              alert("Save successfully!");
+            }
+            </script>
+          
         <footer>
             <br>
+
+            <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
           
             <a href class="btn btn-warning">Top</a>
         </footer> 
